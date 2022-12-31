@@ -7,26 +7,32 @@
 </head>
 <body>
 	<div th:replace="fragments/navbar :: navbar"></div>
-	<img alt="" src="/images/3.png" style="width:200px;height:400px;">
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-xl">
-				<h3>This post has been deleted.</h3>
+	<div class="container-fluid">
+		<div class="row d-flex align-items-start mt-5 pt-5">
+			<div class="col-4 d-flex justify-content-center">
+				<img alt="" src="/images/3.png" style="width: 200px; height: 500px;">
 			</div>
-		</div>
+			<div class="col-6">
+				<div class="row">
+					<div class="container-fluid ">
 
-		<div class="row">
-			<div class="col-md">
-				<a href="/">
-					<button class="btn btn-primary">Return Home</button>
-				</a> <a href="/blogposts/new">
-					<button class="btn btn-secondary">Create Another Blog Post</button>
-				</a>
+						<h2
+							style="color: yellow; font-family: san-serif; font-weight: bold;">
+							This category has been deleted.
+							</h3>
+					</div>
+				</div>
+				<div class="row">
+
+
+
+					<a href="/"><button class="btn btn-primary">Return
+							Home</button></a><br> <a href="/blogposts/new"><button
+							class="btn btn-secondary">Create Another Section</button> </a>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<div th:replace="/fragments/styling :: body-links"></div>
 </body>
 </html>

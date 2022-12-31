@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.7</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.marrerollc</groupId>
 	<artifactId>MyPersonalBlog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TechTalentBlog-1</name>
+	<name>MyPersonalBlog</name>
 	<description>My Personal Blog Project</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -27,9 +27,8 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web-services</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -46,7 +45,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>3.3.7</version>
@@ -62,7 +61,6 @@
 			<version>1.9.1</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -71,5 +69,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>

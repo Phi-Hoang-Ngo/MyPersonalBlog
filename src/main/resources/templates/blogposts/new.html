@@ -8,30 +8,44 @@
 </head>
 <body>
 	<div th:replace="fragments/navbar :: navbar"></div>
-	<img alt="" src="/images/5.png" style="width:200px;height:400px;">
-	
-	<div class="container">
-		<h1>Create a New Blog Post</h1>
-		<form action="#" th:action="@{/blogposts}" th:object="${blogPost}"
-			method="post">
-
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Blog Title..."
-					th:field="*{title}" />
+	<div class="container-fluid">
+		<div class="row d-flex align-items-center pt-5">
+			<div class="col-4 d-flex justify-content-center">
+				<img alt="" src="/images/5.png" style="width: 200px; height: 500px;">
 			</div>
+			<div class="col-6">
 
-			<div class="form-group">
-				<input type="text" class="form-control"
-					placeholder="Your Name Here..." th:field="*{author}" />
+				<div class="container-fluid ">
+
+					<h1
+						style="color: yellow; font-family: san-serif; font-weight: bold;">Create
+						a New Category</h1>
+					<form action="#" th:action="@{/blogposts}" th:object="${blogPost}"
+						method="post">
+
+						<div class="form-group">
+							<input
+								style="background-color: grey; font-family: serif; font-weight: bold;"
+								type="text" class="form-control" placeholder="Category"
+								th:field="*{title}" />
+						</div>
+
+						<div class="form-group">
+							<input
+								style="background-color: grey; font-family: serif; font-weight: bold;"
+								type="text" class="form-control" placeholder="Brand Name"
+								th:field="*{author}" />
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Code Snippet" th:field="*{blogEntry}" />
+						</div>
+
+						<button class="btn btn-outline-warning">Add Section</button>
+					</form>
+				</div>
 			</div>
-
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Blog Entry"
-					th:field="*{blogEntry}" />
-			</div>
-
-			<button class="btn btn-primary">Submit Your Post</button>
-		</form>
+		</div>
 	</div>
 	<div th:replace="/fragments/styling :: body-links"></div>
 </body>

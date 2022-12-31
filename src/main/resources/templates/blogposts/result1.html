@@ -7,21 +7,25 @@
 </head>
 <body>
 	<div th:replace="fragments/navbar :: navbar"></div>
-	<img alt="" src="/images/6.png" style="width:200px;height:400px;">
-	
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-						<h1 th:text="${title}"></h1>
-					</div>
+	<div class="container-fluid">
+		<div class="row d-flex align-items-start mt-5 pt-5">
+			<div class="col-4 d-flex justify-content-center">
+				<img alt="" src="/images/6.png" style="width: 200px; height: 400px;">
+			</div>
+			<div class="col-6">
+
+				<div class="container-fluid ">
+
+					<h1
+						style="color: yellow; font-family: san-serif; font-weight: bold;"
+						th:text="${title}"></h1>
+
 					<div class="panel-body">
-						<strong><p th:text="${author}" /></strong>
-						<p th:text="${blogEntry}" />
+						<strong><p style="color: yellow; font-family: san-serif; font-weight: bold;" th:text="${author}" /></strong>
+						<p style="color: yellow; font-family: san-serif; font-weight: bold;" th:text="${blogEntry}" />
 					</div>
-					<div class="panel-footer">
-				 <a href="#" th:href="@{/blogposts/delete/{id}(id=${id})}">
+					<div class="panel-footer bg-black">
+						<a href="#" th:href="@{/blogposts/delete/{id}(id=${id})}">
 							<button class="btn btn-danger" type="submit">DeletePost</button>
 						</a> <a th:href="@{/}"><button class="btn btn-success">Back
 								To Home Page</button></a> <a th:href="@{/blogposts/new}"><button

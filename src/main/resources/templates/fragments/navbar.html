@@ -10,27 +10,11 @@
 <body>
 
 	<div th:fragment="navbar">
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <ul class="nav navbar-nav navbar-left">
-                 <li><img alt="" src="/1.png"></li>
-                    <li><a class="navbar-brand" th:href="@{/}">Back To Home Page</a></li>
-                    <li><a th:href="@{/blogposts/new}">Submit a New Blog Post</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
 
-        </div><!-- /.container-fluid -->
-</nav>
+		<ul class="nav justify-content-center">
+			<li class="nav-item"><a class="bg-black" th:href="@{/}"><button type="button" class="btn btn-outline-warning">Back to HomePage</button></a></li>
+			<li class="nav-item"><a class="bg-black" th:href="@{/blogposts/new}"><button type="button" class="btn btn-outline-warning">Add a New Section</button></a></li>
+		</ul>
 	</div>
 
 	<script src="../../webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
